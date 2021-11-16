@@ -24,14 +24,14 @@ export default async function handler(
         chain(pages)
           .filter((page) => page !== indexFile)
           .reduce((acc, cur) => {
-            const path = cur.replace(/(\.ts)/g, '').replace(/\//g, '.')
+            const path = cur.replace(/(\.ts|\.js)/g, '').replace(/\//g, '.')
 
             const code = `https://github.com/apeboard/pools/blob/main/pages/api/${cur}`
 
             const apiOrigin =
               process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:3000/api'
 
-            const apiRoute = cur.replace(/(\.ts)/g, '')
+            const apiRoute = cur.replace(/(\.ts|\.js)/g, '')
 
             const api = `${apiOrigin}/${apiRoute}`
 
