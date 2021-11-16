@@ -25,11 +25,14 @@ export default async function handler(
           .filter((page) => page !== indexFile)
           .reduce((acc, cur) => {
             const path = cur.replace(/(\.ts|\.js)/g, '').replace(/\//g, '.')
+            const fileName = cur.replace(/\.js/g, '.ts')
 
-            const code = `https://github.com/apeboard/pools/blob/main/pages/api/${cur}`
+            const code = `https://github.com/apeboard/pools/blob/main/pages/api/${fileName}`
 
             const apiOrigin =
-              process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:3000/api'
+              process.env.NODE_ENV === 'development'
+                ? 'http://localhost:3000/api'
+                : 'https://pools.apeboard.finance/api'
 
             const apiRoute = cur.replace(/(\.ts|\.js)/g, '')
 
