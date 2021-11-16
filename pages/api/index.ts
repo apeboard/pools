@@ -18,9 +18,7 @@ export default async function handler(
             const code = `https://github.com/apeboard/pools/blob/main/pages/api/${cur}`
 
             const apiOrigin =
-              process.env.NODE_ENV === 'development'
-                ? 'http://localhost:3000/api'
-                : 'https://pools.apeboard.finance'
+              process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:3000/api'
 
             const apiRoute = cur.replace(/(\.ts)/g, '')
 
