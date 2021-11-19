@@ -11,10 +11,6 @@ type Launchpool = {
 /** Only support Stake BSW (Smartchef) launchpools */
 const launchpools: Launchpool[] = [
   {
-    name: 'Earn BSW',
-    address: '0xDbc1A13490deeF9c3C12b44FE77b503c1B061739',
-  },
-  {
     name: 'Earn BTCB',
     address: '0xD4855892a3188DA76da0066b9e4918939511E67a',
   },
