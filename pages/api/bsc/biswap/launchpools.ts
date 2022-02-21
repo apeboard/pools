@@ -11,40 +11,28 @@ type Launchpool = {
 /** Only support Stake BSW (Smartchef) launchpools */
 const launchpools: Launchpool[] = [
   {
-    name: 'Earn BTCB',
-    address: '0xD4855892a3188DA76da0066b9e4918939511E67a',
+    name: 'Earn CBT',
+    address: '0x13CA6A2c8d8D1382cc4DEab5cD0A558cf54bb845',
   },
   {
-    name: 'Earn ETH',
-    address: '0x9b9F3F1112E74765518cE93B1489c70F6db52bFf',
+    name: 'Earn TMT',
+    address: '0x6c00f2Ee6A79Fd083DE6EcF541fa59A5Cbe5dfF4',
   },
   {
-    name: 'Earn ALU',
-    address: '0x683963df7331c65Df8ACE6818651a7611bdc39E5',
+    name: 'Earn HOTCROSS',
+    address: '0x8bb11860EF14fB467c837678D15b64f0DbD94d4B',
   },
   {
-    name: 'Earn ZOON',
-    address: '0xBD09D5E5dcC904bbf8649af78d323eEfdf7b0D1D',
+    name: 'Earn TBL',
+    address: '0xd86e4788DD0B59Ce1d7E42a2916fceEa0CE0b4c4',
   },
   {
-    name: 'Earn AIRT',
-    address: '0x8b10E6959F2915f532fE142b9C53B167eEC42fF4',
+    name: 'Earn UDO',
+    address: '0x6E31dad921E3c8bE1059ed4432c8714dA9C1Df38',
   },
   {
-    name: 'Earn PEARL',
-    address: '0x7D621C9F70B3743CbAb15c22d781754FcD7c9589',
-  },
-  {
-    name: 'Earn PCT',
-    address: '0x131010022654B57b0C39c918ef8313ce79Fa04B8',
-  },
-  {
-    name: 'Earn KALA',
-    address: '0x6653c3c4CD2083fEbFf49A52F9a5ce4c30978A25',
-  },
-  {
-    name: 'Earn ETERNAL',
-    address: '0x44EeCE1e9ccbaa5Ad0b8C14192467Ab83BE0BA51',
+    name: 'Earn LOA',
+    address: '0xcC1B012ad72736653e1e5043D902A4081F3f6a73',
   },
 ]
 
