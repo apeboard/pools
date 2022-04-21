@@ -74,6 +74,10 @@ const launchpools: Launchpool[] = [
     name: 'Earn GQ',
     address: '0x0e2ab69B12B2D5036EA00C04eE213f8792f2EAF6',
   },
+  {
+    name: 'Earn XRP',
+    address: '0x1A99a6Fd07B9820c2eb826cE0029b3f1E0b8CF80',
+  },
 ]
 
 export default function handler(
